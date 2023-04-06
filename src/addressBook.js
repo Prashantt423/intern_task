@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./addressBook.css";
 import { v4 } from "uuid";
-function AddressBook() {
+const AddressBook = () => {
   const [contacts, setContacts] = useState([]);
   const [newName, setNewName] = useState("");
   const [editName, setEditName] = useState("");
@@ -188,6 +188,6 @@ function AddressBook() {
       </div>
     </div>
   );
-}
+};
 
 export default AddressBook;
