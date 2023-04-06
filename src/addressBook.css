@@ -1,0 +1,124 @@
+.box{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    gap: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: #0077cc;
+    box-shadow: 0 0 5px rgba(0, 119, 204, 0.5);
+  }
+  
+  .form-input:invalid {
+    border-color: #ff6347;
+  }
+  
+  .form-input::-webkit-input-placeholder {
+    color: #999;
+  }
+  
+  .form-input:-moz-placeholder {
+    color: #999;
+  }
+  
+  .form-input::-moz-placeholder {
+    color: #999;
+  }
+  
+  .form-input:-ms-input-placeholder {
+    color: #999;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  
+  thead {
+    background-color: #0077cc;
+    color: #fff;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th:first-child, td:first-child {
+    padding-left: 16px;
+  }
+  
+  th:last-child, td:last-child {
+    padding-right: 16px;
+  }
+  
+  tbody tr:hover {
+    background-color: rgb(82, 75, 75);
+    color: white;
+  }  
+  
+
+  .modal{
+    height: 50vh;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background: rgb(46 ,7 ,34);
+    width: 60vw;
+    gap: 1.12rem;
+    z-index: 999;
+    padding: 1.125rem;
+
+  }
+
+  .editForm{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.125rem;
+  }
+
+  .close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #ffffff;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
